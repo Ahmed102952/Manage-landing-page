@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- style -->
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- script -->
+  <script src="app/js/app.js" defer></script>
+
+  <!-- title -->
+  <title>Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-beVietnam">
+
+  <!-- Start header -->
+
+  <header class="container mx-auto px-6 py-10 flex items-center justify-between relative">
+    <div class="logo">
+      <img src="assests/images/logo.svg" alt="Logo">
+    </div>
+    <nav class="hidden md:flex space-x-6">
+      <a class="link" href="">Pricing</a>
+      <a class="link" href="">Product</a>
+      <a class="link" href="">About Us</a>
+      <a class="link" href="">Careers</a>
+      <a class="link" href="">Community</a>
+    </nav>
+    <button class="btn desktop">Get Started</button>
+    <!-- hamburger menu -->
+    <div class="hamburger-icon md:hidden cursor-pointer relative">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- mobile menu -->
+    <nav class="mobile-menu rounded-sm absolute left-6  flex flex-col items-center py-10 mx-auto space-y-8 w-[calc(100%-3rem)] bg-white z-10 md:hidden">
+      <a class="link" href="">Pricing</a>
+      <a class="link" href="">Product</a>
+      <a class="link" href="">About Us</a>
+      <a class="link" href="">Careers</a>
+      <a class="link" href="">Community</a>
+    </nav>
+    <div class="overlay absolute top-0 left-0 w-[100vw] h-[100vh] bg-gradient-to-b from-[rgba(255,255,255,0.5)] to-[rgba(0,0,0,0.5)] md:hidden">
+
+    </div>
+  </header>
+
+  <!-- end header -->
+
+  <!-- start hero -->
+
+  <section id="hero">
+    <div class="container flex flex-col px-6 pb-20 mx-auto md:flex-row-reverse md:justify-between md:space-x-2">
+      <div class="md:w-1/2">
+        <img src="assests/images/illustration-intro.svg" alt="">
+      </div>
+      <div class=" flex flex-col items-center justify-center md:w-1/2">
+        <h1 class="text-center text-4xl font-bold text-darkBlue mb-4 md:text-left md:text-5xl">Bring everyone together to build better products.</h1>
+        <p class="text-center text-base text-darkGrayishBlue mb-8 md:text-left md:text-lg">Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.</p>
+          <button class="btn md:self-start">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end hero -->
+
+  <!-- start future -->
+
+  <section id="future">
+    <div class="future">
+      <div class="px-6 text-center md:text-left md:px-0">
+        <h2 class="text-2xl mb-7 text-darkBlue font-bold md:text-4xl">What’s different about Manage?</h2>
+        <p class="text-base text-darkGrayishBlue md:text-lg">Manage provides all the functionality your team needs, without 
+          the complexity. Our software is tailor-made for modern digital 
+          product teams.</p>
+      </div>
+      <div class="future__2">
+        <div class="relative">
+          <h3 class="future__2__h"><span class="future__2__h__span">01</span>Track company-wide progress</h3>
+          <p class="future__2__p">See how your day-to-day tasks fit into the wider vision. Go from 
+            tracking progress at the milestone level all the way done to the 
+            smallest of details. Never lose sight of the bigger picture again.</p>
+        </div>
+        <div class="relative">
+          <h3 class="future__2__h"><span class="future__2__h__span">02</span>Advanced built-in reports</h3>
+          <p class="future__2__p">Set internal delivery estimates and track progress toward company 
+            goals. Our customisable dashboard helps you build out the reports 
+            you need to keep key stakeholders informed.</p>
+        </div>
+        <div class="relative">
+          <h3 class="future__2__h"><span class="future__2__h__span">03</span>Everything you need in one place</h3>
+          <p class="future__2__p">Stop jumping from one service to another to communicate, store files, 
+            track tasks and share documents. Manage offers an all-in-one team 
+            productivity solution.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+  <!-- start future -->
+
+
+  <!-- start testimonials -->
+
+  <section id="testimonials">
+    <h2 class="text-4xl text-darkBlue font-bold text-center mb-24 mt-20">What they’ve said</h2>
+
+    <!-- testimonials -->
+    <div class="testimonials max-w-[90em] flex flex-nowrap px-6 overflow-x-scroll snap-proximity snap-y scroll-px-6 mx-auto ">
+      <div class="hidden md:block md:min-w-[22.75rem]"></div>
+      <div class="testimonial">
+        <div class="testimonial__img"><img  src="assests/images/avatar-anisha.png" alt="">  </div>
+        <div class="text-group bg-black bg-opacity-5">
+          <h4 class="testimonial__h4">Anisha Li</h4>
+          <p class="testimonial__p">“Manage has supercharged our team’s workflow. The ability to maintain
+            visibility on larger milestones at all times keeps everyone motivated.”</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial__img "><img src="assests/images/avatar-ali.png" alt=""></div>
+        <div class="text-group bg-black bg-opacity-5">
+          <h4 class="testimonial__h4">Ali Bravo</h4>
+          <p class="testimonial__p">“We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is much
+            more focused.”</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial__img"><img src="assests/images/avatar-richard.png" alt=""></div>
+          <div class="text-group bg-black bg-opacity-5">
+            <h4 class="testimonial__h4">Richard Watts</h4>
+            <p class="testimonial__p">“Manage allows us to provide structure and process. It keeps us organized
+              and focused. I can’t stop recommending them to everyone I talk to!”</p>
+          </div>
+        </div>
+      <div class="testimonial">
+        <div class="testimonial__img"><img src="assests/images/avatar-shanai.png" alt=""></div>
+          <div class="text-group bg-black bg-opacity-5">
+          <h4 class="testimonial__h4">Shanai Gough</h4>
+          <p class="testimonial__p">“Their software allows us to track, manage and collaborate on our projects
+            from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+          </div>
+        </div>
+        <div class="hidden md:block md:min-w-[22.75rem]"></div>
+      </div>
+    </div>
+    
+    <div class="flex space-x-1 justify-center">
+      <span class="small-circle active-circle" data-scroll="0"></span>
+      <span class="small-circle" data-scroll="1"></span>
+      <span class="small-circle" data-scroll="2"></span>
+      <span class="small-circle" data-scroll="3"></span>
+    </div>
+    
+    <button class="btn my-12 mx-auto md:mb-44">Get Started</button>
+  </section>
+
+
+  <!-- end testimonials -->
+
+  <!-- start CTA section -->
+
+  <section id="cta" class="bg-brightRed">
+    <div class="container w-full h-[25rem] px-6 mx-auto flex flex-col justify-center items-center text-center space-y-6 md:flex-row md:justify-between md:text-left md:space-y-0 md:h-56">
+      <h1 class="text-5xl text-white font-bold md:w-1/2">Simplify how your team works today.</h1>
+      <button class="btn mx-auto bg-white text-brightRed md:mx-0">Get Started</button>
+    </div>
+  </section>
+
+
+  <!-- end CTA section -->
+
+  <!-- start footer -->
+
+  <footer class="bg-veryDarkBlue">
+    <div class="container px-6 pt-12 pb-8 mx-auto flex flex-col-reverse items-center space-y-reverse space-y-14
+    md:grid md:grid-cols-footer md:grid-rows-2 md:space-y-0 md:justify-start md:items-start">
+      <div class="md:col-start-1 md:row-start-1"><img src="assests/images/logoBright.svg" alt="Logo"></div>
+      <div class="social flex space-x-8 md:space-x-3 md:col-start-1 md:row-start-2">
+        <img class="social__img" src="assests/images/icon-facebook.svg" alt="">
+        <img class="social__img" src="assests/images/icon-youtube.svg" alt="">
+        <img class="social__img" src="assests/images/icon-twitter.svg" alt="">
+        <img class="social__img" src="assests/images/icon-pinterest.svg" alt="">
+        <img class="social__img" src="assests/images/icon-instagram.svg" alt="">
+      </div>
+      <nav class="grid w-full grid-flow-col grid-rows-4 gap-y-5 justify-around md:col-start-2 md:row-start-1 md:row-span-2">
+        <a class="footer__link" href="">Home</a>
+        <a class="footer__link" href="">Pricing</a>
+        <a class="footer__link" href="">Products</a>
+        <a class="footer__link" href="">About Us</a>
+        <a class="footer__link" href="">Careers</a>
+        <a class="footer__link" href="">Community</a>
+        <a class="footer__link" href="">Privacy Policy</a>
+      </nav>
+
+      <div class="flex space-x-2.5 w-full md:col-start-3 md:row-start-1" >
+        <input class="block w-[72%] py-3 px-4 text-xs rounded-full outline-none border-0" type="email" placeholder="Update in your inbox ...">
+        <button class="grid w-[28%] bg-brightRed text-white text-xs place-content-center rounded-full">GO</button>
+      </div>
+
+      <p class="text-darkGrayishBlue text-xs text-center -order-2 translate-y-14 md:col-start-3 md:row-span-2 md:order-none md:translate-y-0 self-end">Copyright 2020. All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+  <!-- end footer -->
+  <!-- Pricing
+
+
+
+  
+  
+
+
+  
+  Get Started
+
+
+
+  Updates in your inbox…
+  Go
+
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+</body> 
+</html>
