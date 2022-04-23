@@ -8,7 +8,8 @@ const overlay = document.querySelector('.overlay');
 sliderCircles.forEach(circle => {
     circle.addEventListener('click', () => {
         let i = circle.getAttribute('data-scroll');
-        testimonials[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'center'}) 
+        testimonials[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest'}); 
+        // console.log(i)
     })
 })
 testimonialsFather.addEventListener('scroll', () => {
