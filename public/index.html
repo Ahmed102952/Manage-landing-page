@@ -4,14 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-
+  <link rel="shortcut icon" href="./assests/images/favicon-32x32.png" type="image/x-icon">
   <!-- style -->
   <link rel="stylesheet" href="css/main.css">
-  
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- script -->
   <script src="app/js/app.js" defer></script>
@@ -29,34 +24,39 @@
 
   <!-- Start header -->
 
-  <header class="container mx-auto px-6 py-10 flex items-center justify-between relative">
-    <div class="logo">
-      <img src="assests/images/logo.svg" alt="Logo">
-    </div>
-    <nav class="hidden md:flex space-x-6">
-      <a class="link" href="">Pricing</a>
-      <a class="link" href="">Product</a>
-      <a class="link" href="">About Us</a>
-      <a class="link" href="">Careers</a>
-      <a class="link" href="">Community</a>
-    </nav>
-    <button class="btn desktop">Get Started</button>
-    <!-- hamburger menu -->
-    <div class="hamburger-icon md:hidden cursor-pointer relative">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <!-- mobile menu -->
-    <nav class="mobile-menu rounded-sm absolute left-6  flex flex-col items-center py-10 mx-auto space-y-8 w-[calc(100%-3rem)] bg-white z-10 md:hidden">
-      <a class="link" href="">Pricing</a>
-      <a class="link" href="">Product</a>
-      <a class="link" href="">About Us</a>
-      <a class="link" href="">Careers</a>
-      <a class="link" href="">Community</a>
-    </nav>
-    <div class="overlay absolute top-0 left-0 w-[100vw] h-[100vh] bg-gradient-to-b from-[rgba(255,255,255,0.5)] to-[rgba(0,0,0,0.5)] md:hidden">
-
+  <header id="header">
+    <div class="relative">
+      <div class="container mx-auto px-6 py-10 flex items-center justify-between">
+        <div class="logo z-10">
+          <img src="assests/images/logo.svg" alt="Logo">
+        </div>
+        <nav class="hidden md:flex space-x-6">
+          <a class="link" href="">Pricing</a>
+          <a class="link" href="">Product</a>
+          <a class="link" href="">About Us</a>
+          <a class="link" href="">Careers</a>
+          <a class="link" href="">Community</a>
+        </nav>
+        <button class="btn desktop">Get Started</button>
+        <!-- hamburger menu -->
+        <div class="hamburger-icon md:hidden cursor-pointer relative z-10">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- mobile menu -->
+        <div class="mobile-menu absolute left-6  w-[calc(100%-3rem)]  z-10 md:hidden">
+          <nav class="bg-white max-w-xl rounded-sm flex flex-col items-center py-10 mx-auto space-y-8 w-full">
+            <a class="link" href="">Pricing</a>
+            <a class="link" href="">Product</a>
+            <a class="link" href="">About Us</a>
+            <a class="link" href="">Careers</a>
+            <a class="link" href="">Community</a>
+          </nav>
+        </div>
+        </div>
+      </div>
+      <div class="overlay absolute top-0 left-0 w-[100vw] h-[100vh] bg-gradient-to-b from-[rgba(255,255,255,0.5)] to-[rgba(0,0,0,0.5)] md:hidden">
     </div>
   </header>
 
@@ -130,7 +130,7 @@
       <div class="testimonial">
         <div class="testimonial__img"><img  src="assests/images/avatar-anisha.png" alt="">  </div>
         <div class="text-group bg-black bg-opacity-5">
-          <h4 class="testimonial__h4">Anisha Li</h4>
+          <h3 class="testimonial__h3">Anisha Li</h3>
           <p class="testimonial__p">“Manage has supercharged our team’s workflow. The ability to maintain
             visibility on larger milestones at all times keeps everyone motivated.”</p>
         </div>
@@ -138,7 +138,7 @@
       <div class="testimonial">
         <div class="testimonial__img "><img src="assests/images/avatar-ali.png" alt=""></div>
         <div class="text-group bg-black bg-opacity-5">
-          <h4 class="testimonial__h4">Ali Bravo</h4>
+          <h3 class="testimonial__h3">Ali Bravo</h3>
           <p class="testimonial__p">“We have been able to cancel so many other subscriptions since using
             Manage. There is no more cross-channel confusion and everyone is much
             more focused.”</p>
@@ -147,7 +147,7 @@
       <div class="testimonial">
         <div class="testimonial__img"><img src="assests/images/avatar-richard.png" alt=""></div>
           <div class="text-group bg-black bg-opacity-5">
-            <h4 class="testimonial__h4">Richard Watts</h4>
+            <h3 class="testimonial__h3">Richard Watts</h3>
             <p class="testimonial__p">“Manage allows us to provide structure and process. It keeps us organized
               and focused. I can’t stop recommending them to everyone I talk to!”</p>
           </div>
@@ -155,7 +155,7 @@
       <div class="testimonial">
         <div class="testimonial__img"><img src="assests/images/avatar-shanai.png" alt=""></div>
           <div class="text-group bg-black bg-opacity-5">
-          <h4 class="testimonial__h4">Shanai Gough</h4>
+          <h3 class="testimonial__h3">Shanai Gough</h3>
           <p class="testimonial__p">“Their software allows us to track, manage and collaborate on our projects
             from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
           </div>
@@ -217,34 +217,12 @@
         <button class="grid w-[28%] bg-brightRed text-white text-xs place-content-center rounded-full">GO</button>
       </div>
 
-      <p class="text-darkGrayishBlue text-xs text-center -order-2 translate-y-14 md:col-start-3 md:row-span-2 md:order-none md:translate-y-0 self-end">Copyright 2020. All Rights Reserved</p>
+      <div class="attribution text-darkGrayishBlue text-xs text-center -order-2 translate-y-14 md:col-start-3 md:row-span-2 md:order-none md:translate-y-0 self-end">
+        Challenge by <a class="text-white" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a class="text-white" href="https://github.com/Ahmed102952">Ahmed Mahmoud</a>.
+      </div>
     </div>
   </footer>
 
-
-  <!-- end footer -->
-  <!-- Pricing
-
-
-
-  
-  
-
-
-  
-  Get Started
-
-
-
-  Updates in your inbox…
-  Go
-
-  
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>-->
 </body> 
 </html>

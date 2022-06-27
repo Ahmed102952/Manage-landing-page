@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,7 +40,7 @@
     .text-group {
         @apply h-64 w-full px-6 pt-16 mb-6 rounded-sm  flex flex-col items-center md:px-11;
     }
-    .testimonial__h4 {
+    .testimonial__h3 {
         @apply text-base text-darkBlue font-bold mb-8;
     }
     .testimonial__p {
@@ -120,7 +121,6 @@
     top: 120%;
 }
 .overlay {
-    top: 100%;
     max-height: 0;
 }
 .overlay.open {
