@@ -4,4 +4,6 @@
 
 - Landing page made with HTML and TailwindCSS, JS
 
+- Responsive on all screens
+
 [Live Preview](https://manage-landing-page.am0.tech)
